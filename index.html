@@ -622,10 +622,15 @@
         }
 
         /* Responsive Styles */
-        @media (max-width: 992px) {
+        @media (max-width: 768px) {
+             #hero {
+        padding-top: 80px; /* Space below navbar */
+    }
+    
             .hero-content {
                 flex-direction: column-reverse;
                 text-align: center;
+                gap: 30px;
             }
 
             .hero-text {
@@ -633,9 +638,8 @@
             }
 
             .profile-img {
-                 max-width: 250px; /* Smaller size on mobile */
-        width: 80%; /* More flexible sizing */
-        margin: 0 auto; /* Center the image */
+                  max-width: 220px; /* Better proportion for mobile */
+        margin-top: 20px; 
             }
 
             .hero-buttons {
