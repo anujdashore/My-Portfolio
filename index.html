@@ -222,17 +222,17 @@
             justify-content: center;
         }
 
-       .profile-img {
-    width: 100%;
-    max-width: 350px;
+        .profile-img {
+           width: 100%;
+    max-width: 350px; /* Maximum size on desktop */
     height: auto;
-    aspect-ratio: 1/1;
+    aspect-ratio: 1/1; /* Maintain perfect circle */
     border-radius: 50%;
     object-fit: cover;
     border: 5px solid var(--yellow);
     box-shadow: 0 20px 50px rgba(255, 215, 0, 0.2);
     transition: var(--transition);
-}
+        }
 
         .profile-img:hover {
             transform: scale(1.05);
@@ -633,8 +633,9 @@
             }
 
             .profile-img {
-                width: 250px;
-                height: 250px;
+                 max-width: 250px; /* Smaller size on mobile */
+        width: 80%; /* More flexible sizing */
+        margin: 0 auto; /* Center the image */
             }
 
             .hero-buttons {
